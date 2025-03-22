@@ -12,7 +12,7 @@ pkgname="${_jdkname}-bin"
 _java_ver=24
 _pkgver=${_java_ver}+37
 pkgver=${_pkgver/+/.0.0.u}
-pkgrel=1
+pkgrel=2
 pkgdesc='BellSoft builds of OpenJDK are fully certified and 100% open source Java Development Kits (JDKs) for all Java development and production workloads. Full version includes OpenJFX.'
 arch=(aarch64 x86_64)
 url='https://bell-sw.com/'
@@ -101,11 +101,11 @@ package() {
   ln -s "/usr/share/licenses/${_jdkname}" "${pkgdir}/${_jvmdir}/legal"
 
   # Man pages
-  for f in man/man1/*; do
-    install -Dm 644 "${f}" "${pkgdir}/usr/share/${f/\.1/-$_jdkname.1}"
-  done
-  rm -rf "${pkgdir}/${_jvmdir}/man"
-  ln -s /usr/share/man "${pkgdir}/${_jvmdir}/man"
+  # for f in man/man1/*; do
+  #   install -Dm 644 "${f}" "${pkgdir}/usr/share/${f/\.1/-$_jdkname.1}"
+  # done
+  # rm -rf "${pkgdir}/${_jvmdir}/man"
+  # ln -s /usr/share/man "${pkgdir}/${_jvmdir}/man"
 
   # Link JKS keystore from ca-certificates-utils
   rm -f "${pkgdir}/${_jvmdir}/lib/security/cacerts"
