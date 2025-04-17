@@ -1,7 +1,7 @@
 pkgbase = liberica-jdk-full-bin
 	pkgdesc = BellSoft builds of OpenJDK are fully certified and 100% open source Java Development Kits (JDKs) for all Java development and production workloads. Full version includes OpenJFX.
-	pkgver = 24.0.0.u37
-	pkgrel = 2
+	pkgver = 24.0.1.u11
+	pkgrel = 1
 	url = https://bell-sw.com/
 	install = liberica-jdk-full.install
 	arch = aarch64
@@ -24,11 +24,11 @@ pkgbase = liberica-jdk-full-bin
 	provides = java-runtime-headless-openjdk=24
 	provides = java-runtime=24
 	provides = java-runtime-openjdk=24
-	provides = liberica-jdk-bin=24.0.0.u37
-	provides = liberica-jdk-full-bin=24.0.0.u37
-	provides = liberica-jdk-lite-bin=24.0.0.u37
-	provides = liberica-jre-bin=24.0.0.u37
-	provides = liberica-jre-full-bin=24.0.0.u37
+	provides = liberica-jdk-bin=24.0.1.u11
+	provides = liberica-jdk-full-bin=24.0.1.u11
+	provides = liberica-jdk-lite-bin=24.0.1.u11
+	provides = liberica-jre-bin=24.0.1.u11
+	provides = liberica-jre-full-bin=24.0.1.u11
 	backup = etc/liberica-jdk-full/logging.properties
 	backup = etc/liberica-jdk-full/management/jmxremote.access
 	backup = etc/liberica-jdk-full/management/jmxremote.password.template
@@ -57,9 +57,9 @@ pkgbase = liberica-jdk-full-bin
 	sha1sums = b8233f9ff931ce97a265827fac18ed90f4e248c6
 	sha1sums = a0da2952bc87a425182c3ac88e88649fbaa7cb65
 	sha1sums = eb36aa73a9be98164447774217865b91e79d503c
-	source_aarch64 = https://download.bell-sw.com/java/24+37/bellsoft-jdk24+37-linux-aarch64-full.tar.gz
-	sha1sums_aarch64 = 9bea12a1c2824f4eb57c0bea9e79448b6f8dac15
-	source_x86_64 = https://download.bell-sw.com/java/24+37/bellsoft-jdk24+37-linux-amd64-full.tar.gz
-	sha1sums_x86_64 = 868b5c716265373dabf84e7329bcfa70bef27b20
+	source_aarch64 = https://download.bell-sw.com/java/24.0.1+11/bellsoft-jdk24.0.1+11-linux-aarch64-full.tar.gz
+	sha1sums_aarch64 = 51d72d523ae2aac6709d19874c443be783deed0d
+	source_x86_64 = https://download.bell-sw.com/java/24.0.1+11/bellsoft-jdk24.0.1+11-linux-amd64-full.tar.gz
+	sha1sums_x86_64 = bc6a7c86582e2414c1229a95a9269c741cbbba7c
 
 pkgname = liberica-jdk-full-bin
