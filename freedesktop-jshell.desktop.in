@@ -5,5 +5,5 @@ Keywords=java;shell
 Exec=/usr/lib/jvm/liberica-jdk-full/bin/jshell
 Terminal=true
 Type=Application
-Icon=liberica-jdk-full
+Icon=java-openjdk
 Categories=Application;System;

@@ -56,9 +56,9 @@ source=(freedesktop-java.desktop.in
         ${_jdkname}24.png::https://raw.githubusercontent.com/openjdk/jdk/master/src/java.desktop/unix/classes/sun/awt/X11/java-icon24.png
         ${_jdkname}32.png::https://raw.githubusercontent.com/openjdk/jdk/master/src/java.desktop/unix/classes/sun/awt/X11/java-icon32.png
         ${_jdkname}48.png::https://raw.githubusercontent.com/openjdk/jdk/master/src/java.desktop/unix/classes/sun/awt/X11/java-icon48.png)
-sha1sums=('19873c53aaf234d215b9892450bfd4e95c13ed7c'
-          '5347a8c12c16a29aada0babdfda5dbef236717c0'
-          '8a66b7e3c5fa8b2f11ee1dd2b11127f7156cb60b'
+sha1sums=('fe1e43bf295862bb3bd206278f53ecd384dbe0ca'
+          'efbccfb524875d4968a3fbef56b9f14533279d3f'
+          '5c09312d636e85b09742a777d71729d901c4cdbd'
           '36096a57cebd346e08efc68326fe77960d43726f'
           'b8233f9ff931ce97a265827fac18ed90f4e248c6'
           'a0da2952bc87a425182c3ac88e88649fbaa7cb65'
@@ -90,7 +90,7 @@ package() {
   cd jdk-${_pkgver/+*}-full
 
   install -dm 755 "${pkgdir}/${_jvmdir}"
-  cp -a . "${pkgdir}/${_jvmdir}/"
+  cp -r . "${pkgdir}/${_jvmdir}/"
 
   # copied from java11-openjdk
 
