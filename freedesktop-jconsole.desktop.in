@@ -5,5 +5,5 @@ Keywords=java;console;monitoring
 Exec=/usr/lib/jvm/liberica-jdk-full/bin/jconsole
 Terminal=false
 Type=Application
-Icon=liberica-jdk-full
+Icon=java-openjdk
 Categories=Application;System;
